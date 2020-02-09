@@ -216,3 +216,12 @@ console.log(employeesBelow20);
 // Return a new array with those employees that are active
 let active = (employees.filter((x) => x.active === true));
 console.log(active);
+
+
+// Find the highest paid developer
+function highestPaid(employees) {
+    let pay = employees.map(e => e.salary);
+    let highestPaid = Math.max(...pay);
+    return employees.filter(e=> e.salary === highestPaid);
+}
+console.log(highestPaid(employees));
