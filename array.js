@@ -199,13 +199,13 @@ employees = [
 
  
 // Return a new array with those employess that are webdevelopers
-let webDevelopers = (employees.filter((x)=> x.Job == 'Web Developer'));
+let webDevelopers = (employees.filter((x)=> x.Job === 'Web Developer'));
 console.log(webDevelopers);
 
 
 
 // Return a new array with those employees that are both web developers and from Nigeria
-let webDevsFromNigeria = (employees.filter((x)=> x.Job == 'Web Developer'  && x.Country == 'Nigeria'));
+let webDevsFromNigeria = (employees.filter((x)=> x.Job === 'Web Developer'  && x.Country === 'Nigeria'));
 console.log(webDevsFromNigeria);
 
 
@@ -214,5 +214,5 @@ let employeesBelow20 = (employees.filter((x) => x.age < 20));
 console.log(employeesBelow20);
 
 // Return a new array with those employees that are active
-let active = (employees.filter((x) => x.active == true));
+let active = (employees.filter((x) => x.active === true));
 console.log(active);
